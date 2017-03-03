@@ -1,0 +1,12 @@
+16:26:47 **** Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.d" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
