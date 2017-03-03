@@ -89,7 +89,7 @@ void Stack::pop()
 	{
 		item * n = new item();
 		n = stackPtr;
-		readItem(n);
+		cout<<"Item "<< readItem(n) <<" popped"<<endl;
 		stackPtr = stackPtr->prev;
 		n->prev = NULL;
 		delete n;
@@ -121,8 +121,6 @@ int main() {
 	List1.push("Paul", 10);
 	List1.print();
 	List1.pop();
-	List1.print();
-	List1.pop();
-	List1.pop();
+
 }
 

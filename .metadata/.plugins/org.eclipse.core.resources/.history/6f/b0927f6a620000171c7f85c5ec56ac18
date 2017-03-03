@@ -121,8 +121,6 @@ int main() {
 	List1.push("Paul", 10);
 	List1.print();
 	List1.pop();
-	List1.print();
-	List1.pop();
-	List1.pop();
+
 }
 
