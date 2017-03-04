@@ -1,0 +1,76 @@
+//============================================================================
+// Name        : Queue.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int value;
+	node * next;
+};
+
+class Queue
+{
+private:
+	node * frontPtr;
+	node * rearPtr;
+
+public:
+	Queue();
+	void Enqueue(int Data);
+	void Dequeue();
+	void print();
+};
+
+Queue::Queue()
+{
+	frontPtr = NULL;
+	rearPtr = NULL;
+}
+
+void Queue::Enqueue(int Data)
+{
+	node * n = new node();
+	n->value = Data;
+	n->next = NULL;
+
+	if(frontPtr == NULL && rearPtr == NULL)
+	{
+		frontPtr = n;
+		rearPtr = n ;
+	}
+	else
+	{
+		rearPtr->next = n ;
+		rearPtr = n;
+	}
+}
+
+void Queue::Dequeue()
+{
+	node * delptr = new node();
+
+	if(frontPtr == NULL)
+	{
+		cout<<"Queue is empty"<<endl;
+	}
+	else
+	{
+		delptr = frontPtr;
+		frontPtr = frontPtr->next;
+		delptr->next = NULL;
+	}
+	cout<<"Dequeued "<<delptr->value;
+	delete delptr;
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

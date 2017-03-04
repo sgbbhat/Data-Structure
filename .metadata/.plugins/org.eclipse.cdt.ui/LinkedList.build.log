@@ -1,4 +1,4 @@
-16:50:56 **** Build of configuration Debug for project LinkedList ****
+17:35:17 **** Incremental Build of configuration Debug for project LinkedList ****
 make all 
 Building file: ../src/LinkedList.cpp
 Invoking: Cross G++ Compiler
@@ -11,5 +11,5 @@ g++  -o "LinkedList"  ./src/LinkedList.o
 Finished building target: LinkedList
  
 
-16:50:56 Build Finished (took 417ms)
+17:35:18 Build Finished (took 426ms)
 

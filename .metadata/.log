@@ -24,3 +24,6 @@ java.io.FileNotFoundException: /home/shreeganesh/Documents/C++/Data-Structure/St
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-03-03 16:50:50.260
 !MESSAGE Indexed 'LinkedList' (1 sources, 0 headers) in 0.00 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-03 17:42:18.504
+!MESSAGE Indexed 'Queue' (1 sources, 0 headers) in 0.01 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)

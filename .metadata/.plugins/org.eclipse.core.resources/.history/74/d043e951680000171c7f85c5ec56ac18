@@ -1,0 +1,84 @@
+//============================================================================
+// Name        : LinkedList.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int data;
+	node * next;
+};
+
+class LinkedList
+{
+private:
+	node * currPtr;
+	node * tempPtr;
+	node * headPtr;
+
+public:
+	LinkedList();
+	void addNode(int Data);
+	void deleteNode(int Data);
+	void print();
+};
+
+LinkedList::LinkedList()
+{
+	currPtr = NULL;
+	tempPtr = NULL;
+	headPtr = NULL;
+}
+
+void LinkedList::addNode(int Data)
+{
+	node * n = new node();
+	n->data = Data;
+	n->next = NULL;
+
+	if(headPtr == NULL)
+	{
+		headPtr = n;
+	}
+	else
+	{
+		currPtr = headPtr ;
+		while(currPtr->next == NULL)
+		{
+			currPtr = currPtr->next;
+		}
+
+		currPtr->next = n;
+	}
+}
+
+void LinkedList::deleteNode(int Data)
+{
+	node * delPtr = new node();
+
+	if(headPtr == NULL)
+	{
+		cout<< "Nothing to delete"<<endl;
+	}
+	else
+	{
+		currPtr = headPtr;
+		tempPtr = headPtr;
+
+		while(currPtr->next != NULL && currPtr)
+		{
+
+		}
+	}
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}
