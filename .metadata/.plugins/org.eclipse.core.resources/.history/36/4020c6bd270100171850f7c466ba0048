@@ -1,0 +1,45 @@
+//============================================================================
+// Name        : DoubleLinkedList.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "DoubleLinkedList.h"
+using namespace std;
+
+using namespace std;
+
+DoubleLinkedList::DoubleLinkedList()
+{
+	headPtr = NULL;
+	tailPtr = NULL;
+	currPtr = NULL;
+	tempPtr = NULL;
+}
+
+void DoubleLinkedList::AddNode(int key)
+{
+	node * n = new node();
+	n->key = key;
+	n->next = NULL;
+	n->prev = NULL;
+
+	if(headPtr == NULL)
+	{
+		headPtr = n;
+		tailPtr = n;
+	}
+	else
+	{
+		currPtr = headPtr
+	}
+}
+
+int main() {
+
+
+	return 0;
+}

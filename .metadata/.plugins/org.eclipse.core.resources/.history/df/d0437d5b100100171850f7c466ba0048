@@ -1,0 +1,50 @@
+//============================================================================
+// Name        : LListWithTail.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "LListWithTail.h"
+using namespace std;
+
+ListWithTail::ListWithTail()
+{
+	hearPtr = NULL;
+	tailPtr = NULL;
+	currPtr = NULL;
+	tempPtr = NULL;
+}
+
+void ListWithTail::pushFront(int key)
+{
+	node * n = new node();
+	n->key = key;
+
+	if(hearPtr == NULL)
+	{
+		hearPtr = n;
+		tailPtr = n;
+		n->next = NULL;
+	}
+	else
+	{
+		n->next = hearPtr;
+		hearPtr = n;
+	}
+}
+
+bool ListWithTail::isEmpty()
+{
+	if(headPtr == NULL)
+		return true;
+	else
+		return false;
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

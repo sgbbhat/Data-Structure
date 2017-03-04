@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;DoubleLinkedList/src/DoubleLinkedList.cpp&apos;" deleteContents="false" description="Delete resource &apos;DoubleLinkedList/src/DoubleLinkedList.cpp&apos;" element1="/DoubleLinkedList/src/DoubleLinkedList.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1488665346949"/>
+</session>

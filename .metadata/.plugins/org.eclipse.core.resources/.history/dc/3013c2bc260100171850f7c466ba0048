@@ -1,0 +1,27 @@
+/*
+ * DoubleLinkedList.h
+ *
+ *  Created on: Mar 4, 2017
+ *      Author: shreeganesh
+ */
+
+#ifndef DOUBLELINKEDLIST_H_
+#define DOUBLELINKEDLIST_H_
+
+struct node
+{
+	int key;
+	node * next;
+	node * prev;
+};
+
+class DoubleLinkedList
+{
+	node * headPtr;
+	node * tailPtr;
+	node * currPtr;
+	node * tempPtr;
+};
+
+
+#endif /* DOUBLELINKEDLIST_H_ */
