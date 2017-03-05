@@ -192,3 +192,6 @@ java.lang.IllegalArgumentException:
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-04 20:04:24.860
+!MESSAGE Indexed 'BST' (1 sources, 0 headers) in 0.00 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)

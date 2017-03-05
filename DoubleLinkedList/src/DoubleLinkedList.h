@@ -27,6 +27,8 @@ public:
 	DoubleLinkedList();
 	void AddNode(int key);
 	void DeleteNode(int key);
+	void PushFront(int key);
+	void PushBack(int key);
 	void PrintList();
 };
 

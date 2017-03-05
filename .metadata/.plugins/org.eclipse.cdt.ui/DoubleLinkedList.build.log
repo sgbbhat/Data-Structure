@@ -1,6 +1,6 @@
-16:16:26 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
+17:28:19 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
 make all 
 make: Nothing to be done for 'all'.
 
-16:16:26 Build Finished (took 70ms)
+17:28:19 Build Finished (took 72ms)
 
