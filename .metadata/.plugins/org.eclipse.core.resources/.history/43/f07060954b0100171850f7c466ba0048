@@ -1,0 +1,32 @@
+//============================================================================
+// Name        : BST.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int key;
+	node * left;
+	node * right;
+};
+
+class BST
+{
+
+private:
+	node * root ;
+
+public:
+
+};
+
+int main() {
+
+	return 0;
+}

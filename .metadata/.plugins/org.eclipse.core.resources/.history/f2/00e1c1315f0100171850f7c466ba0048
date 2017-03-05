@@ -1,0 +1,50 @@
+//============================================================================
+// Name        : BST.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int key;
+	node * left;
+	node * right;
+};
+
+class BST
+{
+private:
+	node * root;
+	void AddLeafPrivate(int key, node * Ptr);
+
+public:
+	BST();
+	node * CreateLeaf(int key);
+	void AddLeaf(int key);
+};
+
+BST::BST()
+{
+	root = NULL;
+}
+
+node * BST::CreateLeaf(int key)
+{
+	node * n = new node();
+	n->key = key;
+	n->left = NULL;
+	n->right = NULL;
+
+	return n;
+}
+
+
+int main() {
+
+	return 0;
+}

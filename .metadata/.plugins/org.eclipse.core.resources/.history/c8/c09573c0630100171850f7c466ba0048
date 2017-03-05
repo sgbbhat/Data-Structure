@@ -21,13 +21,11 @@ class BST
 private:
 	node * root;
 	void AddLeafPrivate(int key, node * Ptr);
-	void PrintInOrderPrivate(node * Ptr);
 
 public:
 	BST();
 	node * CreateLeaf(int key);
 	void AddLeaf(int key);
-	void PrintInOrder();
 };
 
 BST::BST()
@@ -72,34 +70,7 @@ void BST::AddLeaf(int key)
 	AddLeafPrivate(key, root);
 }
 
-void BST::PrintInOrder()
-{
-	PrintInOrderPrivate(root);
-}
-
-void BST::PrintInOrderPrivate(node * Ptr)
-{
-	if(root != NULL)
-	{
-		if(Ptr->left != NULL)
-		{
-			PrintInOrderPrivate(Ptr->left);
-		}
-		cout<<Ptr->right<<" " ;
-		if(Ptr->right != NULL)
-		{
-			PrintInOrderPrivate(Ptr->right);
-		}
-	}
-	else
-		cout<<"Tree is empty"<<endl;
-}
-
 int main() {
-	int TreeKeys[16] = {50, 76, 21, 4, 32, 64, 15, 52, 14, 100, 83, 2,3, 70, 87, 80};
-	BST myTree;
-
-
 
 	return 0;
 }
