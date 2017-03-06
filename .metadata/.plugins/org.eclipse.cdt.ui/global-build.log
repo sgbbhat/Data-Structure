@@ -1,807 +1,197 @@
-18:22:12 **** Incremental Build of configuration Debug for project Queue ****
+18:25:09 **** Clean-only build of configuration Debug for project BST ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  BST
+ 
+18:44:10 **** Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+../src/DynamicArray.cpp: In function ‘int main()’:
+../src/DynamicArray.cpp:23:12: error: invalid conversion from ‘void*’ to ‘int*’ [-fpermissive]
+  p = malloc(10* sizeof(int));
+      ~~~~~~^~~~~~~~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/DynamicArray.o' failed
+make: *** [src/DynamicArray.o] Error 1
+18:46:10 **** Incremental Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+../src/DynamicArray.cpp: In function ‘int main()’:
+../src/DynamicArray.cpp:22:8: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+  int * p ;
+        ^
+Finished building: ../src/DynamicArray.cpp
+ 
+Building target: DynamicArray
+Invoking: Cross G++ Linker
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
+ 
+18:46:32 **** Incremental Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
+ 
+Building target: DynamicArray
+Invoking: Cross G++ Linker
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
+ 
+18:46:47 **** Incremental Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+../src/DynamicArray.cpp: In function ‘int main()’:
+../src/DynamicArray.cpp:23:30: error: lvalue required as left operand of assignment
+  p = new int [5] = {1,2,3,4,5};
+                              ^
+make: *** [src/DynamicArray.o] Error 1
+src/subdir.mk:18: recipe for target 'src/DynamicArray.o' failed
+18:46:56 **** Incremental Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
+ 
+Building target: DynamicArray
+Invoking: Cross G++ Linker
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
+ 
+18:47:13 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
-18:22:42 **** Incremental Build of configuration Debug for project Queue ****
+18:48:06 **** Incremental Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+../src/DynamicArray.cpp: In function ‘void print(int*)’:
+../src/DynamicArray.cpp:17:3: error: expected ‘;’ before ‘p’
+   p = p+1;
+   ^
+make: *** [src/DynamicArray.o] Error 1
+src/subdir.mk:18: recipe for target 'src/DynamicArray.o' failed
+18:48:15 **** Incremental Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
+ 
+Building target: DynamicArray
+Invoking: Cross G++ Linker
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
+ 
+18:48:17 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
-18:23:13 **** Incremental Build of configuration Debug for project Queue ****
+19:06:05 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
-Building file: ../src/Queue.cpp
+Building file: ../src/DynamicArray.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
-Finished building: ../src/Queue.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
  
-Building target: Queue
+Building target: DynamicArray
 Invoking: Cross G++ Linker
-g++  -o "Queue"  ./src/Queue.o   
-Finished building target: Queue
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
  
-18:23:19 **** Incremental Build of configuration Debug for project Queue ****
+19:06:08 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
-18:23:36 **** Incremental Build of configuration Debug for project Queue ****
+19:07:16 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
-Building file: ../src/Queue.cpp
+Building file: ../src/DynamicArray.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
-Finished building: ../src/Queue.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
  
-Building target: Queue
+Building target: DynamicArray
 Invoking: Cross G++ Linker
-g++  -o "Queue"  ./src/Queue.o   
-Finished building target: Queue
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
  
-18:23:39 **** Incremental Build of configuration Debug for project Queue ****
+19:07:21 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
-18:24:03 **** Incremental Build of configuration Debug for project Queue ****
+19:07:56 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
-Building file: ../src/Queue.cpp
+Building file: ../src/DynamicArray.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
-Finished building: ../src/Queue.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
  
-Building target: Queue
+Building target: DynamicArray
 Invoking: Cross G++ Linker
-g++  -o "Queue"  ./src/Queue.o   
-Finished building target: Queue
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
  
-18:24:05 **** Incremental Build of configuration Debug for project Queue ****
+19:07:59 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
-18:24:26 **** Incremental Build of configuration Debug for project Queue ****
-make all 
-Building file: ../src/Queue.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
-Finished building: ../src/Queue.cpp
- 
-Building target: Queue
-Invoking: Cross G++ Linker
-g++  -o "Queue"  ./src/Queue.o   
-Finished building target: Queue
- 
-18:24:30 **** Incremental Build of configuration Debug for project Queue ****
+19:08:17 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
-18:24:55 **** Incremental Build of configuration Debug for project Queue ****
+19:09:51 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
-Building file: ../src/Queue.cpp
+Building file: ../src/DynamicArray.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
-Finished building: ../src/Queue.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
  
-Building target: Queue
+Building target: DynamicArray
 Invoking: Cross G++ Linker
-g++  -o "Queue"  ./src/Queue.o   
-Finished building target: Queue
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
  
-18:24:57 **** Incremental Build of configuration Debug for project Queue ****
+19:09:54 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
-18:25:06 **** Incremental Build of configuration Debug for project Queue ****
+19:10:38 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
-Building file: ../src/Queue.cpp
+Building file: ../src/DynamicArray.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
-Finished building: ../src/Queue.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
  
-Building target: Queue
+Building target: DynamicArray
 Invoking: Cross G++ Linker
-g++  -o "Queue"  ./src/Queue.o   
-Finished building target: Queue
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
  
-18:25:08 **** Incremental Build of configuration Debug for project Queue ****
+19:11:57 **** Incremental Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
+ 
+Building target: DynamicArray
+Invoking: Cross G++ Linker
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
+ 
+19:12:11 **** Incremental Build of configuration Debug for project DynamicArray ****
+make all 
+Building file: ../src/DynamicArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DynamicArray.d" -MT"src/DynamicArray.d" -o "src/DynamicArray.o" "../src/DynamicArray.cpp"
+Finished building: ../src/DynamicArray.cpp
+ 
+Building target: DynamicArray
+Invoking: Cross G++ Linker
+g++  -o "DynamicArray"  ./src/DynamicArray.o   
+Finished building target: DynamicArray
+ 
+19:12:13 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
-18:25:21 **** Incremental Build of configuration Debug for project Queue ****
-make all 
-Building file: ../src/Queue.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
-Finished building: ../src/Queue.cpp
- 
-Building target: Queue
-Invoking: Cross G++ Linker
-g++  -o "Queue"  ./src/Queue.o   
-Finished building target: Queue
- 
-18:25:23 **** Incremental Build of configuration Debug for project Queue ****
-make all 
-make: Nothing to be done for 'all'.
-18:25:32 **** Incremental Build of configuration Debug for project Queue ****
-make all 
-Building file: ../src/Queue.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
-Finished building: ../src/Queue.cpp
- 
-Building target: Queue
-Invoking: Cross G++ Linker
-g++  -o "Queue"  ./src/Queue.o   
-Finished building target: Queue
- 
-18:25:33 **** Incremental Build of configuration Debug for project Queue ****
-make all 
-make: Nothing to be done for 'all'.
-13:20:57 **** Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-../src/LListWithTail.cpp:10:26: fatal error: ListWithTail.h: No such file or directory
-src/subdir.mk:18: recipe for target 'src/LListWithTail.o' failed
- #include "ListWithTail.h"
-                          ^
-compilation terminated.
-make: *** [src/LListWithTail.o] Error 1
-13:21:38 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-../src/LListWithTail.cpp:10:26: fatal error: ListWithTail.h: No such file or directory
- #include "ListWithTail.h"
-                          ^
-compilation terminated.
-make: *** [src/LListWithTail.o] Error 1
-src/subdir.mk:18: recipe for target 'src/LListWithTail.o' failed
-13:22:08 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-13:26:01 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-13:31:56 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-13:34:59 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-13:35:24 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-13:35:37 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-make: Nothing to be done for 'all'.
-13:36:33 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-13:36:36 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-make: Nothing to be done for 'all'.
-13:37:28 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-make: Nothing to be done for 'all'.
-13:37:34 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-13:39:58 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-13:40:02 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-make: Nothing to be done for 'all'.
-15:15:59 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-../src/LListWithTail.cpp: In member function ‘int ListWithTail::topFront()’:
-../src/LListWithTail.cpp:88:10: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
-   return NULL;
-          ^~~~
-../src/LListWithTail.cpp: In member function ‘int ListWithTail::topBack()’:
-../src/LListWithTail.cpp:99:10: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
-   return NULL;
-          ^~~~
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-15:16:22 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-../src/LListWithTail.cpp: In member function ‘int ListWithTail::topBack()’:
-../src/LListWithTail.cpp:99:10: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
-   return NULL;
-          ^~~~
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-15:16:29 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-15:22:14 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-../src/LListWithTail.cpp: In function ‘int main()’:
-../src/LListWithTail.cpp:151:37: warning: second operand of conditional expression has no effect [-Wunused-value]
-  List.findKey(10) ? "True" : "False";
-                                     ^
-../src/LListWithTail.cpp:151:37: warning: third operand of conditional expression has no effect [-Wunused-value]
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-15:22:47 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-../src/LListWithTail.cpp: In function ‘int main()’:
-../src/LListWithTail.cpp:151:37: warning: second operand of conditional expression has no effect [-Wunused-value]
-  List.findKey(10) ? "True" : "False";
-                                     ^
-../src/LListWithTail.cpp:151:37: warning: third operand of conditional expression has no effect [-Wunused-value]
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-15:25:11 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-15:25:51 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-make: Nothing to be done for 'all'.
-15:25:55 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-make: Nothing to be done for 'all'.
-15:26:11 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-15:26:14 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-make: Nothing to be done for 'all'.
-15:34:38 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-16:01:00 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-../src/LListWithTail.cpp: In member function ‘void ListWithTail::popFront()’:
-../src/LListWithTail.cpp:117:12: warning: statement has no effect [-Wunused-value]
-    tailPtr == NULL;
-            ^
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-16:01:16 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-../src/LListWithTail.cpp: In member function ‘void ListWithTail::popFront()’:
-../src/LListWithTail.cpp:117:18: warning: statement has no effect [-Wunused-value]
-    tailPtr->next == NULL;
-                  ^
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-16:01:37 **** Incremental Build of configuration Debug for project LListWithTail ****
-make all 
-Building file: ../src/LListWithTail.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LListWithTail.d" -MT"src/LListWithTail.d" -o "src/LListWithTail.o" "../src/LListWithTail.cpp"
-Finished building: ../src/LListWithTail.cpp
- 
-Building target: LListWithTail
-Invoking: Cross G++ Linker
-g++  -o "LListWithTail"  ./src/LListWithTail.o   
-Finished building target: LListWithTail
- 
-16:07:21 **** Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/DoubleLinkedList.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DoubleLinkedList.d" -MT"src/DoubleLinkedList.d" -o "src/DoubleLinkedList.o" "../src/DoubleLinkedList.cpp"
-Finished building: ../src/DoubleLinkedList.cpp
- 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/DoubleLinkedList.o ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:08:34 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/DoubleLinkedList.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DoubleLinkedList.d" -MT"src/DoubleLinkedList.d" -o "src/DoubleLinkedList.o" "../src/DoubleLinkedList.cpp"
-Finished building: ../src/DoubleLinkedList.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/DoubleLinkedList.o ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:14:56 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:15:07 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:15:53 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:16:26 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:14 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:17 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:24 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:30 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:46 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:47 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:47 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:48 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:18:50 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:19:50 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:19:53 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:21:36 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:24:34 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:24:35 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:27:08 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:27:14 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:29:34 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:29:42 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:30:34 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:30:39 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:33:10 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:33:13 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:33:50 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:33:52 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:45:00 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:45:02 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:45:20 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:45:22 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:52:09 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:52:34 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:52:36 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-16:52:47 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-16:52:49 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-17:11:07 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-17:19:27 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-17:19:29 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-17:20:01 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-17:20:03 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-17:20:25 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-17:20:27 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-17:24:47 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-17:24:50 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-17:24:50 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-17:28:10 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: DoubleLinkedList
-Invoking: Cross G++ Linker
-g++  -o "DoubleLinkedList"  ./src/main.o   
-Finished building target: DoubleLinkedList
- 
-17:28:19 **** Incremental Build of configuration Debug for project DoubleLinkedList ****
-make all 
-make: Nothing to be done for 'all'.
-22:43:40 **** Build of configuration Debug for project BST ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: BST
-Invoking: Cross G++ Linker
-g++  -o "BST"  ./src/main.o   
-Finished building target: BST
- 
-23:06:59 **** Incremental Build of configuration Debug for project BST ****
-make all 
-Building file: ../src/main.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: BST
-Invoking: Cross G++ Linker
-g++  -o "BST"  ./src/main.o   
-Finished building target: BST
- 

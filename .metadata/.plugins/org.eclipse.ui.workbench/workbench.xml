@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="26" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="773" maximized="true" width="1022" x="35" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -35,9 +35,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Queue.cpp" partName="Queue.cpp" path="/home/shreeganesh/Documents/C++/Data-Structure/Queue/src/Queue.cpp" title="Queue.cpp" tooltip="Queue/src/Queue.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Queue/src/Queue.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="94" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="/home/shreeganesh/Documents/C++/Data-Structure/BST/src/main.cpp" title="main.cpp" tooltip="BST/src/main.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BST/src/main.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1698" selectionTopPixel="1044"/>
 </editor>
 </editors>
 <views>
@@ -48,6 +48,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Errors (3 items)"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="284" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
@@ -118,43 +119,30 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@464a4442" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@464a4442" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.65865386" ratioLeft="411" ratioRight="213" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<info folder="true" part="bottomRight" ratio="0.65865386" ratioLeft="411" ratioRight="213" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="312" ratioRight="312" relationship="4" relative="topLeft">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="312" ratioRight="312" relationship="4" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -208,9 +196,9 @@
 <new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
@@ -240,8 +228,8 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2494331" ratioLeft="330" ratioRight="993" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7647059" ratioLeft="468" ratioRight="144" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.76960784" ratioLeft="471" ratioRight="141" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -271,133 +259,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Stack/src/Stack.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Stack/Debug/src/subdir.mk"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/LinkedList/src/LinkedList.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Queue/src/Queue.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DoubleLinkedList/src/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DoubleLinkedList/src/DoubleLinkedList.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BST/src/BST.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BST/src/BST.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BST/src/main.cpp"/>
 </editors>
-<item historyLabel="Stack.cpp" index="0">
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2015" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="1055" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="1215" y="0"/>
+</item>
+<item historyLabel="DoubleLinkedList.h" index="1">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2309" y="0"/>
+</item>
+<item historyLabel="DoubleLinkedList.h" index="1">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2309" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="1322" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="1501" y="0"/>
+</item>
+<item historyLabel="DoubleLinkedList.h" index="1">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="1501" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2431" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="1576" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
 <position/>
 </item>
-<item historyLabel="Stack.cpp" index="0">
+<item historyLabel="main.cpp" index="0">
 <position/>
 </item>
-<item historyLabel="Stack.cpp" index="0">
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="1802" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2013" y="0"/>
+</item>
+<item historyLabel="DoubleLinkedList.h" index="1">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2013" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2548" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2583" y="0"/>
+</item>
+<item historyLabel="BST.cpp" index="2">
 <position/>
 </item>
-<item historyLabel="Stack.cpp" index="0">
+<item historyLabel="BST.cpp" index="2">
 <position/>
 </item>
-<item historyLabel="Stack.cpp" index="0">
+<item historyLabel="BST.cpp" index="2">
 <position/>
 </item>
-<item historyLabel="subdir.mk" index="1">
-<position info="not_deleted" x="471" y="26"/>
-</item>
-<item historyLabel="Stack.cpp" index="0">
+<item historyLabel="BST.h" index="3">
 <position/>
 </item>
-<item historyLabel="Stack.cpp" index="0">
-<position info="not_deleted" x="1110" y="0"/>
+<item historyLabel="BST.cpp" index="2">
+<position/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="BST.cpp" index="2">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="523" y="0"/>
+<item historyLabel="BST.h" index="3">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="566" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1587" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="498" y="0"/>
+<item historyLabel="BST.cpp" index="2">
+<position info="not_deleted" x="77" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="712" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1587" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="769" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="565" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="852" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="536" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="1520" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="703" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="984" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="589" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="1047" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="835" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="1079" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="860" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="1148" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="886" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="1229" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="913" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="1273" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="947" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="1398" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1015" y="0"/>
 </item>
-<item historyLabel="LinkedList.cpp" index="2">
-<position info="not_deleted" x="1475" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position/>
 </item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position/>
 </item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="510" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="611" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="527" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1312" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="542" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1378" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="485" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1584" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="674" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1405" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="752" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1472" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="951" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="979" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="927" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="1093" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="859" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="1239" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="1557" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="549" y="14"/>
-</item>
-<item historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="1093" y="0"/>
-</item>
-<item active="true" historyLabel="Queue.cpp" index="3">
-<position info="not_deleted" x="1187" y="0"/>
+<item active="true" historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="1698" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -405,14 +421,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="bottom"/>
-<trimItem IMemento.internal.id="topRight"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -424,6 +432,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="BST/src/main.cpp">
+<persistable path="/BST/src/main.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="BST.h" tooltip="BST/src/BST.h">
+<persistable path="/BST/src/BST.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="BST.cpp" tooltip="BST/src/BST.cpp">
+<persistable path="/BST/src/BST.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Queue.cpp" tooltip="Queue/src/Queue.cpp">
 <persistable path="/Queue/src/Queue.cpp"/>
 </file>

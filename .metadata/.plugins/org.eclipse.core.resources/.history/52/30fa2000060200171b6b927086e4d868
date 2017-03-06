@@ -1,0 +1,25 @@
+//============================================================================
+// Name        : DynamicArray.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+void print(int *p)
+{
+	while(p != NULL)
+	{
+		cout<<p;
+	}
+}
+
+int main() {
+	int * p = new int();
+	p = malloc(10* sizeof(int));
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}
