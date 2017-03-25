@@ -1,6 +1,6 @@
-19:12:13 **** Incremental Build of configuration Debug for project DynamicArray ****
+20:03:19 **** Incremental Build of configuration Debug for project DynamicArray ****
 make all 
 make: Nothing to be done for 'all'.
 
-19:12:13 Build Finished (took 69ms)
+20:03:19 Build Finished (took 73ms)
 

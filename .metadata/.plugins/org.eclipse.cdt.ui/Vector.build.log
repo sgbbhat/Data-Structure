@@ -1,0 +1,32 @@
+23:03:49 **** Incremental Build of configuration Debug for project Vector ****
+make all 
+Building file: ../src/Vector.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Vector.d" -MT"src/Vector.d" -o "src/Vector.o" "../src/Vector.cpp"
+../src/Vector.cpp: In member function ‘std::vector<int> Solution::twoSum1(std::vector<int>&, int)’:
+../src/Vector.cpp:20:6: error: ‘Map’ was not declared in this scope
+      Map<Integer, Integer> map = new HashMap<>();
+      ^~~
+../src/Vector.cpp:20:10: error: ‘Integer’ was not declared in this scope
+      Map<Integer, Integer> map = new HashMap<>();
+          ^~~~~~~
+../src/Vector.cpp:20:32: error: missing template arguments before ‘=’ token
+      Map<Integer, Integer> map = new HashMap<>();
+                                ^
+../src/Vector.cpp:20:38: error: ‘HashMap’ does not name a type
+      Map<Integer, Integer> map = new HashMap<>();
+                                      ^~~~~~~
+../src/Vector.cpp:20:46: error: expected primary-expression before ‘>’ token
+      Map<Integer, Integer> map = new HashMap<>();
+                                              ^
+../src/Vector.cpp:20:48: error: expected primary-expression before ‘)’ token
+      Map<Integer, Integer> map = new HashMap<>();
+                                                ^
+../src/Vector.cpp:21:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+src/subdir.mk:18: recipe for target 'src/Vector.o' failed
+make: *** [src/Vector.o] Error 1
+
+23:03:50 Build Finished (took 367ms)
+

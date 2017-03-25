@@ -1,0 +1,15 @@
+00:13:16 **** Incremental Build of configuration Debug for project iofStream ****
+make all 
+Building file: ../src/iofStream.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/iofStream.d" -MT"src/iofStream.d" -o "src/iofStream.o" "../src/iofStream.cpp"
+Finished building: ../src/iofStream.cpp
+ 
+Building target: iofStream
+Invoking: Cross G++ Linker
+g++  -o "iofStream"  ./src/iofStream.o   
+Finished building target: iofStream
+ 
+
+00:13:17 Build Finished (took 417ms)
+

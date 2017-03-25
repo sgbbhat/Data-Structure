@@ -1,0 +1,6 @@
+22:39:33 **** Incremental Build of configuration Debug for project Fibo ****
+make all 
+make: Nothing to be done for 'all'.
+
+22:39:33 Build Finished (took 74ms)
+

@@ -1,0 +1,27 @@
+//============================================================================
+// Name        : Mergesort.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+void mergesort(int * array, int * sortedarray, int start, int end);
+
+void mergesort(int * array, int * sortedarray)
+{
+	mergesort(array, sortedarray, 0, 10);
+}
+
+void mergesort(int * array, int * sortedarray, int start, int end)
+{
+	int middle = (start + end) / 2;
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}
