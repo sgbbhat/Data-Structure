@@ -1,0 +1,39 @@
+//============================================================================
+// Name        : VirtualFunction.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+class Person
+{
+public:
+	void AboutMe()
+	{
+		cout<<"I am a person"<<endl;
+	}
+};
+
+class student: Person
+{
+public:
+	void AboutMe()
+	{
+		cout<<"I am a student"<<endl;
+	}
+};
+
+class Engineer:Person
+{
+	student * n = new student();
+	n->AboutMe();
+};
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}
