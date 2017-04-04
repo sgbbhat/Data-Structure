@@ -285,3 +285,27 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-03-24 23:36:33.754
 !MESSAGE Indexed 'VirtualFunction' (1 sources, 148 headers) in 5.67 sec: 12,650 declarations; 20,687 references; 0 unresolved inclusions; 22 syntax errors; 27 unresolved names (0.08%)
+!SESSION 2017-03-25 13:16:13.405 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-25 13:43:31.248
+!MESSAGE Indexed 'Q1.1' (1 sources, 0 headers) in 0.04 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+
+!ENTRY org.eclipse.cdt.debug.core 4 105 2017-03-25 14:05:46.295
+!MESSAGE A program file was not specified in the launch configuration.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-25 14:05:57.145
+!MESSAGE Indexed 'Q1_1' (0 sources, 0 headers) in 0.00 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2017-04-01 22:45:13.693 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/shreeganesh/Documents/C++/Data-Structure -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-01 22:51:31.944
+!MESSAGE Indexed 'RotateMatrix' (1 sources, 0 headers) in 0.10 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)

@@ -3068,3 +3068,1194 @@ Finished building target: VirtualFunction
 00:58:31 **** Incremental Build of configuration Debug for project VirtualFunction ****
 make all 
 make: Nothing to be done for 'all'.
+13:56:49 **** Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:18:19: error: no match for ‘operator=’ (operand types are ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ and ‘std::__cxx11::basic_string<char>::iterator {aka __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >}’)
+  for(it = S.begin(); it != S.end(); it++)
+                   ^
+In file included from /usr/include/c++/6/map:60:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_tree.h:178:12: note: candidate: constexpr std::_Rb_tree_iterator<std::pair<const char, int> >& std::_Rb_tree_iterator<std::pair<const char, int> >::operator=(const std::_Rb_tree_iterator<std::pair<const char, int> >&)
+     struct _Rb_tree_iterator
+            ^~~~~~~~~~~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:178:12: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>::iterator {aka __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >}’ to ‘const std::_Rb_tree_iterator<std::pair<const char, int> >&’
+/usr/include/c++/6/bits/stl_tree.h:178:12: note: candidate: constexpr std::_Rb_tree_iterator<std::pair<const char, int> >& std::_Rb_tree_iterator<std::pair<const char, int> >::operator=(std::_Rb_tree_iterator<std::pair<const char, int> >&&)
+/usr/include/c++/6/bits/stl_tree.h:178:12: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>::iterator {aka __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >}’ to ‘std::_Rb_tree_iterator<std::pair<const char, int> >&&’
+../src/main.cpp:18:25: error: no match for ‘operator!=’ (operand types are ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ and ‘std::__cxx11::basic_string<char>::iterator {aka __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >}’)
+  for(it = S.begin(); it != S.end(); it++)
+                      ~~~^~~~~~~~~~
+In file included from /usr/include/c++/6/map:60:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_tree.h:241:7: note: candidate: bool std::_Rb_tree_iterator<_Tp>::operator!=(const _Self&) const [with _Tp = std::pair<const char, int>; std::_Rb_tree_iterator<_Tp>::_Self = std::_Rb_tree_iterator<std::pair<const char, int> >]
+       operator!=(const _Self& __x) const _GLIBCXX_NOEXCEPT
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:241:7: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>::iterator {aka __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >}’ to ‘const _Self& {aka const std::_Rb_tree_iterator<std::pair<const char, int> >&}’
+In file included from /usr/include/c++/6/iosfwd:40:0,
+                 from /usr/include/c++/6/ios:38,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/postypes.h:221:5: note: candidate: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^~~~~~~~
+/usr/include/c++/6/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::fpos<_StateT>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/stl_pair.h:444:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_pair.h:444:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::pair<_T1, _T2>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/stl_iterator.h:304:5: note: candidate: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:304:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/stl_iterator.h:361:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:361:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/stl_iterator.h:1125:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:1125:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/stl_iterator.h:1131:5: note: candidate: template<class _Iterator> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:1131:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/string:41:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/allocator.h:145:5: note: candidate: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^~~~~~~~
+/usr/include/c++/6/bits/allocator.h:145:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::allocator<_CharT>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/string:41:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/allocator.h:151:5: note: candidate: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/6/bits/allocator.h:151:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::allocator<_CharT>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/basic_string.h:5097:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5097:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/basic_string.h:5110:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5110:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   mismatched types ‘const _CharT*’ and ‘std::_Rb_tree_iterator<std::pair<const char, int> >’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/basic_string.h:5122:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5122:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/ios_base.h:46:0,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/system_error:311:3: note: candidate: bool std::operator!=(const std::error_code&, const std::error_code&)
+   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/6/system_error:311:3: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const std::error_code&’
+/usr/include/c++/6/system_error:315:3: note: candidate: bool std::operator!=(const std::error_code&, const std::error_condition&)
+   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/6/system_error:315:3: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const std::error_code&’
+/usr/include/c++/6/system_error:319:3: note: candidate: bool std::operator!=(const std::error_condition&, const std::error_code&)
+   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/6/system_error:319:3: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const std::error_condition&’
+/usr/include/c++/6/system_error:323:3: note: candidate: bool std::operator!=(const std::error_condition&, const std::error_condition&)
+   operator!=(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/6/system_error:323:3: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/6/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/6/bits/basic_ios.h:37,
+                 from /usr/include/c++/6/ios:44,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/streambuf_iterator.h:210:5: note: candidate: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^~~~~~~~
+/usr/include/c++/6/bits/streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/map:60:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_tree.h:334:5: note: candidate: template<class _Val> bool std::operator!=(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator!=(const _Rb_tree_iterator<_Val>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:334:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::__cxx11::basic_string<char>::iterator {aka __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >}’ is not derived from ‘const std::_Rb_tree_const_iterator<_Val>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/map:60:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_tree.h:1302:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator!=(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator!=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1302:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/tuple:39:0,
+                 from /usr/include/c++/6/bits/stl_map.h:63,
+                 from /usr/include/c++/6/map:61,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/array:246:5: note: candidate: template<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+/usr/include/c++/6/array:246:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::array<_Tp, _Nm>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/stl_map.h:63:0,
+                 from /usr/include/c++/6/map:61,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/tuple:1363:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Args1 ...>&, const std::tuple<_Args2 ...>&)
+     operator!=(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+/usr/include/c++/6/tuple:1363:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::tuple<_Args1 ...>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/map:61:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_map.h:1331:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:1331:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/map:62:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_multimap.h:996:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_multimap.h:996:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/x86_64-linux-gnu/c++/6/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/6/bits/allocator.h:46,
+                 from /usr/include/c++/6/string:41,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/ext/new_allocator.h:144:5: note: candidate: template<class _Tp> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator!=(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/6/ext/new_allocator.h:144:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const __gnu_cxx::new_allocator<_Tp>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/stl_iterator.h:877:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:877:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/stl_iterator.h:870:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:870:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:18:34: note:   ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+  for(it = S.begin(); it != S.end(); it++)
+                                  ^
+../src/main.cpp:26:5: error: no match for ‘operator[]’ (operand types are ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ and ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’)
+    S[it] = 1;
+     ^
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/6/bits/basic_string.h:905:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_reference = const char&; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+       operator[] (size_type __pos) const _GLIBCXX_NOEXCEPT
+       ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:905:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’
+/usr/include/c++/6/bits/basic_string.h:922:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference = char&; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+       operator[](size_type __pos)
+       ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:922:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’
+make: *** [src/main.o] Error 1
+13:59:35 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:18:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < S.length(); i++)
+                 ~~^~~~~~~~~~~~
+../src/main.cpp:20:23: error: no matching function for call to ‘std::map<char, int>::find(std::map<char, int>::iterator&)’
+   if(CharCount.find(it))
+                       ^
+In file included from /usr/include/c++/6/map:61:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_map.h:1079:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::find(const key_type&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       find(const key_type& __x)
+       ^~~~
+/usr/include/c++/6/bits/stl_map.h:1079:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const key_type& {aka const char&}’
+/usr/include/c++/6/bits/stl_map.h:1085:2: note: candidate: template<class _Kt> decltype (((std::map<_Key, _Tp, _Compare, _Alloc>*)this)->std::map<_Key, _Tp, _Compare, _Alloc>::_M_t._M_find_tr(__x)) std::map<_Key, _Tp, _Compare, _Alloc>::find(const _Kt&) [with _Kt = _Kt; _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >]
+  find(const _Kt& __x) -> decltype(_M_t._M_find_tr(__x))
+  ^~~~
+/usr/include/c++/6/bits/stl_map.h:1085:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/6/bits/stl_map.h: In substitution of ‘template<class _Kt> decltype (((std::map<_Key, _Tp, _Compare, _Alloc>*)this)->std::map<_Key, _Tp, _Compare, _Alloc>::_M_t._M_find_tr(__x)) std::map<_Key, _Tp, _Compare, _Alloc>::find(const _Kt&) [with _Kt = std::_Rb_tree_iterator<std::pair<const char, int> >]’:
+../src/main.cpp:20:23:   required from here
+/usr/include/c++/6/bits/stl_map.h:1085:2: error: no matching function for call to ‘std::_Rb_tree<char, std::pair<const char, int>, std::_Select1st<std::pair<const char, int> >, std::less<char>, std::allocator<std::pair<const char, int> > >::_M_find_tr(const std::_Rb_tree_iterator<std::pair<const char, int> >&)’
+In file included from /usr/include/c++/6/map:60:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_tree.h:1128:2: note: candidate: template<class _Kt, class _Req> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_find_tr(const _Kt&) [with _Kt = _Kt; _Req = _Req; _Key = char; _Val = std::pair<const char, int>; _KeyOfValue = std::_Select1st<std::pair<const char, int> >; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >]
+  _M_find_tr(const _Kt& __k)
+  ^~~~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1128:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/6/bits/stl_tree.h:1125:9: error: no type named ‘type’ in ‘struct std::__has_is_transparent<std::less<char>, std::_Rb_tree_iterator<std::pair<const char, int> >, void>’
+         typename _Req =
+         ^~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1138:2: note: candidate: template<class _Kt, class _Req> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_find_tr(const _Kt&) const [with _Kt = _Kt; _Req = _Req; _Key = char; _Val = std::pair<const char, int>; _KeyOfValue = std::_Select1st<std::pair<const char, int> >; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >]
+  _M_find_tr(const _Kt& __k) const
+  ^~~~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1138:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/6/bits/stl_tree.h:1135:9: error: no type named ‘type’ in ‘struct std::__has_is_transparent<std::less<char>, std::_Rb_tree_iterator<std::pair<const char, int> >, void>’
+         typename _Req =
+         ^~~~~~~~
+In file included from /usr/include/c++/6/map:61:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_map.h:1104:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator std::map<_Key, _Tp, _Compare, _Alloc>::find(const key_type&) const [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       find(const key_type& __x) const
+       ^~~~
+/usr/include/c++/6/bits/stl_map.h:1104:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const key_type& {aka const char&}’
+/usr/include/c++/6/bits/stl_map.h:1110:2: note: candidate: template<class _Kt> decltype (((const std::map<_Key, _Tp, _Compare, _Alloc>*)this)->std::map<_Key, _Tp, _Compare, _Alloc>::_M_t._M_find_tr(__x)) std::map<_Key, _Tp, _Compare, _Alloc>::find(const _Kt&) const [with _Kt = _Kt; _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >]
+  find(const _Kt& __x) const -> decltype(_M_t._M_find_tr(__x))
+  ^~~~
+/usr/include/c++/6/bits/stl_map.h:1110:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/6/bits/stl_map.h: In substitution of ‘template<class _Kt> decltype (((const std::map<_Key, _Tp, _Compare, _Alloc>*)this)->std::map<_Key, _Tp, _Compare, _Alloc>::_M_t._M_find_tr(__x)) std::map<_Key, _Tp, _Compare, _Alloc>::find(const _Kt&) const [with _Kt = std::_Rb_tree_iterator<std::pair<const char, int> >]’:
+../src/main.cpp:20:23:   required from here
+/usr/include/c++/6/bits/stl_map.h:1110:2: error: no matching function for call to ‘std::_Rb_tree<char, std::pair<const char, int>, std::_Select1st<std::pair<const char, int> >, std::less<char>, std::allocator<std::pair<const char, int> > >::_M_find_tr(const std::_Rb_tree_iterator<std::pair<const char, int> >&) const’
+In file included from /usr/include/c++/6/map:60:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_tree.h:1128:2: note: candidate: template<class _Kt, class _Req> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_find_tr(const _Kt&) [with _Kt = _Kt; _Req = _Req; _Key = char; _Val = std::pair<const char, int>; _KeyOfValue = std::_Select1st<std::pair<const char, int> >; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >]
+  _M_find_tr(const _Kt& __k)
+  ^~~~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1128:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/6/bits/stl_tree.h:1125:9: error: no type named ‘type’ in ‘struct std::__has_is_transparent<std::less<char>, std::_Rb_tree_iterator<std::pair<const char, int> >, void>’
+         typename _Req =
+         ^~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1138:2: note: candidate: template<class _Kt, class _Req> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_find_tr(const _Kt&) const [with _Kt = _Kt; _Req = _Req; _Key = char; _Val = std::pair<const char, int>; _KeyOfValue = std::_Select1st<std::pair<const char, int> >; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >]
+  _M_find_tr(const _Kt& __k) const
+  ^~~~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1138:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/6/bits/stl_tree.h:1135:9: error: no type named ‘type’ in ‘struct std::__has_is_transparent<std::less<char>, std::_Rb_tree_iterator<std::pair<const char, int> >, void>’
+         typename _Req =
+         ^~~~~~~~
+../src/main.cpp:26:13: error: no match for ‘operator[]’ (operand types are ‘std::map<char, int>’ and ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’)
+    CharCount[it] = 1;
+             ^
+In file included from /usr/include/c++/6/map:61:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_map.h:474:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](const key_type& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:474:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const key_type& {aka const char&}’
+/usr/include/c++/6/bits/stl_map.h:494:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](key_type&& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:494:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘std::map<char, int>::key_type&& {aka char&&}’
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+14:00:00 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:18:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < S.length(); i++)
+                 ~~^~~~~~~~~~~~
+../src/main.cpp:20:20: error: could not convert ‘CharCount.std::map<_Key, _Tp, _Compare, _Alloc>::find<char, int, std::less<char>, std::allocator<std::pair<const char, int> > >((*(const key_type*)(& S.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[]<char, std::char_traits<char>, std::allocator<char> >(((std::__cxx11::basic_string<char>::size_type)i)))))’ from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘bool’
+   if(CharCount.find(S[i]))
+      ~~~~~~~~~~~~~~^~~~~~
+../src/main.cpp:26:13: error: no match for ‘operator[]’ (operand types are ‘std::map<char, int>’ and ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’)
+    CharCount[it] = 1;
+             ^
+In file included from /usr/include/c++/6/map:61:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_map.h:474:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](const key_type& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:474:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const key_type& {aka const char&}’
+/usr/include/c++/6/bits/stl_map.h:494:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](key_type&& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:494:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘std::map<char, int>::key_type&& {aka char&&}’
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+14:02:37 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:18:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < S.length(); i++)
+                 ~~^~~~~~~~~~~~
+../src/main.cpp:27:13: error: no match for ‘operator[]’ (operand types are ‘std::map<char, int>’ and ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’)
+    CharCount[it] = 1;
+             ^
+In file included from /usr/include/c++/6/map:61:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_map.h:474:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](const key_type& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:474:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const key_type& {aka const char&}’
+/usr/include/c++/6/bits/stl_map.h:494:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](key_type&& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:494:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘std::map<char, int>::key_type&& {aka char&&}’
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+14:03:12 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:18:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < S.length(); i++)
+                 ~~^~~~~~~~~~~~
+../src/main.cpp:27:13: error: no match for ‘operator[]’ (operand types are ‘std::map<char, int>’ and ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’)
+    CharCount[it] = 1;
+             ^
+In file included from /usr/include/c++/6/map:61:0,
+                 from ../src/main.cpp:10:
+/usr/include/c++/6/bits/stl_map.h:474:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](const key_type& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:474:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘const key_type& {aka const char&}’
+/usr/include/c++/6/bits/stl_map.h:494:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](key_type&& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:494:7: note:   no known conversion for argument 1 from ‘std::map<char, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const char, int> >}’ to ‘std::map<char, int>::key_type&& {aka char&&}’
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+14:03:26 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:18:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < S.length(); i++)
+                 ~~^~~~~~~~~~~~
+../src/main.cpp:27:18: error: no match for call to ‘(std::map<char, int>) (__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type&)’
+    CharCount(S[i]) = 1;
+                  ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+14:04:25 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:18:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < S.length(); i++)
+                 ~~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Q1.1
+Invoking: Cross G++ Linker
+g++  -o "Q1.1"  ./src/main.o   
+Finished building target: Q1.1
+ 
+14:04:38 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1.1
+Invoking: Cross G++ Linker
+g++  -o "Q1.1"  ./src/main.o   
+Finished building target: Q1.1
+ 
+14:04:50 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:32:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.cpp
+ 
+Building target: Q1.1
+Invoking: Cross G++ Linker
+g++  -o "Q1.1"  ./src/main.o   
+Finished building target: Q1.1
+ 
+14:05:02 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:32:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.cpp
+ 
+Building target: Q1.1
+Invoking: Cross G++ Linker
+g++  -o "Q1.1"  ./src/main.o   
+Finished building target: Q1.1
+ 
+14:05:15 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:33:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.cpp
+ 
+Building target: Q1.1
+Invoking: Cross G++ Linker
+g++  -o "Q1.1"  ./src/main.o   
+Finished building target: Q1.1
+ 
+14:05:34 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:05:44 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:05:46 **** Incremental Build of configuration Debug for project Q1.1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:06:01 **** Build of configuration Debug for project Q1_1 ****
+make all 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:06:23 **** Clean-only build of configuration Debug for project Q1_1 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  Q1_1
+ 
+14:06:26 **** Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:33:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:06:41 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool IsCharUnique(std::__cxx11::string)’:
+../src/main.cpp:34:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:07:00 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:07:11 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:08:23 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:13:27 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:13:29 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:14:02 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:14:05 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:14:21 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:14:23 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:26:17 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:26:19 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:26:35 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:26:37 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:26:47 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+14:26:49 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:27:23 **** Incremental Build of configuration Debug for project Q1_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Q1_1
+Invoking: Cross G++ Linker
+g++  -o "Q1_1"  ./src/main.o   
+Finished building target: Q1_1
+ 
+23:04:24 **** Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+../src/RotateMatrix.cpp: In function ‘int main()’:
+../src/RotateMatrix.cpp:44:6: warning: unused variable ‘X’ [-Wunused-variable]
+  int X[4][4] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+      ^
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:17:26 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:19:33 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:19:43 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+23:20:16 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:20:18 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+23:20:31 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:20:32 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+23:20:43 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:20:45 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+23:26:44 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+../src/RotateMatrix.cpp: In function ‘void rotateMatrix(int (*)[4])’:
+../src/RotateMatrix.cpp:35:59: error: expected primary-expression before ‘<<’ token
+             cout<<"mat[N-1-x][N-1-y];"<<mat[N-1-x][N-1-y];<<endl;
+                                                           ^~
+../src/RotateMatrix.cpp:12:11: error: expected identifier before numeric constant
+ #define N 4
+           ^
+../src/RotateMatrix.cpp:40:38: note: in expansion of macro ‘N’
+             cout<<"[N-1-x][N-1-y]"<<[N-1-x][N-1-y]<<endl;
+                                      ^
+../src/RotateMatrix.cpp: In lambda function:
+../src/RotateMatrix.cpp:40:44: error: expected ‘{’ before ‘[’ token
+             cout<<"[N-1-x][N-1-y]"<<[N-1-x][N-1-y]<<endl;
+                                            ^
+../src/RotateMatrix.cpp: In function ‘void rotateMatrix(int (*)[4])’:
+../src/RotateMatrix.cpp:40:44: error: no match for ‘operator[]’ (operand types are ‘rotateMatrix(int (*)[4])::<lambda()>’ and ‘int’)
+make: *** [src/RotateMatrix.o] Error 1
+src/subdir.mk:18: recipe for target 'src/RotateMatrix.o' failed
+23:26:57 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+../src/RotateMatrix.cpp: In function ‘void rotateMatrix(int (*)[4])’:
+../src/RotateMatrix.cpp:12:11: error: expected identifier before numeric constant
+ #define N 4
+           ^
+../src/RotateMatrix.cpp:40:38: note: in expansion of macro ‘N’
+             cout<<"[N-1-x][N-1-y]"<<[N-1-x][N-1-y]<<endl;
+                                      ^
+../src/RotateMatrix.cpp: In lambda function:
+../src/RotateMatrix.cpp:40:44: error: expected ‘{’ before ‘[’ token
+             cout<<"[N-1-x][N-1-y]"<<[N-1-x][N-1-y]<<endl;
+                                            ^
+../src/RotateMatrix.cpp: In function ‘void rotateMatrix(int (*)[4])’:
+../src/RotateMatrix.cpp:40:44: error: no match for ‘operator[]’ (operand types are ‘rotateMatrix(int (*)[4])::<lambda()>’ and ‘int’)
+make: *** [src/RotateMatrix.o] Error 1
+src/subdir.mk:18: recipe for target 'src/RotateMatrix.o' failed
+23:27:21 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:27:24 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+23:28:14 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:28:16 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+23:30:06 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:30:29 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+23:30:32 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+23:53:47 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:00:45 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:00:48 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:00:59 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:01:00 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:01:18 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:01:46 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:01:53 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:05:09 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:05:10 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:08:29 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:08:30 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:12:05 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:12:07 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:14:02 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:14:03 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:19:07 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:19:08 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:19:37 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:19:39 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:21:17 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:21:18 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:24:22 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:24:29 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:24:30 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:25:22 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:25:24 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:27:46 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:27:48 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
+00:28:19 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+Building file: ../src/RotateMatrix.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RotateMatrix.d" -MT"src/RotateMatrix.d" -o "src/RotateMatrix.o" "../src/RotateMatrix.cpp"
+Finished building: ../src/RotateMatrix.cpp
+ 
+Building target: RotateMatrix
+Invoking: Cross G++ Linker
+g++  -o "RotateMatrix"  ./src/RotateMatrix.o   
+Finished building target: RotateMatrix
+ 
+00:28:21 **** Incremental Build of configuration Debug for project RotateMatrix ****
+make all 
+make: Nothing to be done for 'all'.
