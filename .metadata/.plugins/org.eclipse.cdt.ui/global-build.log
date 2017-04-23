@@ -4259,3 +4259,139 @@ Finished building target: RotateMatrix
 00:28:21 **** Incremental Build of configuration Debug for project RotateMatrix ****
 make all 
 make: Nothing to be done for 'all'.
+23:05:31 **** Build of configuration Debug for project ReducedString ****
+make all 
+Building file: ../src/ReducedString.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReducedString.d" -MT"src/ReducedString.d" -o "src/ReducedString.o" "../src/ReducedString.cpp"
+../src/ReducedString.cpp: In function ‘int main()’:
+../src/ReducedString.cpp:22:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0; i< s1.length(); i++)
+               ~^~~~~~~~~~~~~
+../src/ReducedString.cpp:30:5: error: no match for ‘operator[]’ (operand types are ‘std::map<char, int>’ and ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’)
+    m[s1] = 1;
+     ^
+In file included from /usr/include/c++/6/map:61:0,
+                 from ../src/ReducedString.cpp:10:
+/usr/include/c++/6/bits/stl_map.h:474:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](const key_type& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:474:7: note:   no known conversion for argument 1 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘const key_type& {aka const char&}’
+/usr/include/c++/6/bits/stl_map.h:494:7: note: candidate: std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = char; _Tp = int; _Compare = std::less<char>; _Alloc = std::allocator<std::pair<const char, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = char]
+       operator[](key_type&& __k)
+       ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:494:7: note:   no known conversion for argument 1 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘std::map<char, int>::key_type&& {aka char&&}’
+src/subdir.mk:18: recipe for target 'src/ReducedString.o' failed
+make: *** [src/ReducedString.o] Error 1
+23:06:23 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+Building file: ../src/ReducedString.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReducedString.d" -MT"src/ReducedString.d" -o "src/ReducedString.o" "../src/ReducedString.cpp"
+Finished building: ../src/ReducedString.cpp
+ 
+Building target: ReducedString
+Invoking: Cross G++ Linker
+g++  -o "ReducedString"  ./src/ReducedString.o   
+Finished building target: ReducedString
+ 
+23:06:42 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+make: Nothing to be done for 'all'.
+23:06:59 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+Building file: ../src/ReducedString.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReducedString.d" -MT"src/ReducedString.d" -o "src/ReducedString.o" "../src/ReducedString.cpp"
+Finished building: ../src/ReducedString.cpp
+ 
+Building target: ReducedString
+Invoking: Cross G++ Linker
+g++  -o "ReducedString"  ./src/ReducedString.o   
+Finished building target: ReducedString
+ 
+23:07:01 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+make: Nothing to be done for 'all'.
+23:07:29 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+Building file: ../src/ReducedString.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReducedString.d" -MT"src/ReducedString.d" -o "src/ReducedString.o" "../src/ReducedString.cpp"
+Finished building: ../src/ReducedString.cpp
+ 
+Building target: ReducedString
+Invoking: Cross G++ Linker
+g++  -o "ReducedString"  ./src/ReducedString.o   
+Finished building target: ReducedString
+ 
+23:07:43 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+make: Nothing to be done for 'all'.
+23:07:45 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+make: Nothing to be done for 'all'.
+23:36:53 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+Building file: ../src/ReducedString.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReducedString.d" -MT"src/ReducedString.d" -o "src/ReducedString.o" "../src/ReducedString.cpp"
+../src/ReducedString.cpp: In function ‘int main()’:
+../src/ReducedString.cpp:23:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(i < s1.length())
+        ~~^~~~~~~~~~~~~
+../src/ReducedString.cpp:27:12: error: invalid conversion from ‘const char*’ to ‘__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type {aka char}’ [-fpermissive]
+    s1[i] = "";
+            ^~
+../src/ReducedString.cpp:28:14: error: invalid conversion from ‘const char*’ to ‘__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type {aka char}’ [-fpermissive]
+    s1[i+1] = "";
+              ^~
+src/subdir.mk:18: recipe for target 'src/ReducedString.o' failed
+make: *** [src/ReducedString.o] Error 1
+23:37:56 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+Building file: ../src/ReducedString.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReducedString.d" -MT"src/ReducedString.d" -o "src/ReducedString.o" "../src/ReducedString.cpp"
+../src/ReducedString.cpp: In function ‘int main()’:
+../src/ReducedString.cpp:27:12: error: invalid conversion from ‘const char*’ to ‘__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type {aka char}’ [-fpermissive]
+    s1[i] = "";
+            ^~
+../src/ReducedString.cpp:28:14: error: invalid conversion from ‘const char*’ to ‘__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type {aka char}’ [-fpermissive]
+    s1[i+1] = "";
+              ^~
+src/subdir.mk:18: recipe for target 'src/ReducedString.o' failed
+make: *** [src/ReducedString.o] Error 1
+23:41:51 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+Building file: ../src/ReducedString.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReducedString.d" -MT"src/ReducedString.d" -o "src/ReducedString.o" "../src/ReducedString.cpp"
+Finished building: ../src/ReducedString.cpp
+ 
+Building target: ReducedString
+Invoking: Cross G++ Linker
+g++  -o "ReducedString"  ./src/ReducedString.o   
+Finished building target: ReducedString
+ 
+23:41:58 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+make: Nothing to be done for 'all'.
+23:41:59 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+make: Nothing to be done for 'all'.
+23:42:27 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+make: Nothing to be done for 'all'.
+23:46:45 **** Incremental Build of configuration Debug for project ReducedString ****
+make all 
+Building file: ../src/ReducedString.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReducedString.d" -MT"src/ReducedString.d" -o "src/ReducedString.o" "../src/ReducedString.cpp"
+Finished building: ../src/ReducedString.cpp
+ 
+Building target: ReducedString
+Invoking: Cross G++ Linker
+g++  -o "ReducedString"  ./src/ReducedString.o   
+Finished building target: ReducedString
+ 

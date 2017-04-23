@@ -1,0 +1,21 @@
+//============================================================================
+// Name        : ReducedString.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main() {
+	string s1;
+
+	map<char, int> m;
+	map<char, int>::iterator it;
+
+	cout << "Insert a string to be reduced : " << endl; // prints !!!Hello World!!!
+	return 0;
+}
