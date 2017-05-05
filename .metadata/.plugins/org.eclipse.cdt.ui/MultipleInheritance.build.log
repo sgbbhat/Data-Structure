@@ -1,0 +1,15 @@
+17:36:43 **** Incremental Build of configuration Debug for project MultipleInheritance ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: MultipleInheritance
+Invoking: Cross G++ Linker
+g++  -o "MultipleInheritance"  ./src/Main.o   
+Finished building target: MultipleInheritance
+ 
+
+17:36:43 Build Finished (took 403ms)
+
